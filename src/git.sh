@@ -75,3 +75,7 @@ gf() {
 gfp() {
     gf --prune
 }
+
+grmp() {
+    grm && gpf
+}
