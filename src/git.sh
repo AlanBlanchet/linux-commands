@@ -56,6 +56,14 @@ gaa() {
     ga .
 }
 
+gaac() {
+    gaa && gc
+}
+
+gaacp() {
+    gaac && gp
+}
+
 gr() {
     git rebase $@
 }
