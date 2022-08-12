@@ -8,9 +8,9 @@ echo "Moving aliases from $path to ~/.aliases"
 shopt -s dotglob
 mv -v -f $path/* ~/.aliases
 
-sourceAliases = "source ~/.aliases/source.sh"
+sourceAliases="~/.aliases/source.sh"
 
 
-echo "$sourceAliases" >> ~/.bashrc
+echo "source $sourceAliases" >> ~/.bashrc
 
-$sourceAliases
+source "$sourceAliases"
