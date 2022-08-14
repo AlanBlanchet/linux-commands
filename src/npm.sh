@@ -42,3 +42,7 @@ nrfi() {
 naf() {
     npm audit fix $@
 }
+
+nr() {
+    npm run $@
+}
