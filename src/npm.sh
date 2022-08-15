@@ -46,3 +46,7 @@ naf() {
 nr() {
     npm run $@
 }
+
+nrd() {
+    nr dev
+}
