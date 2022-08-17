@@ -10,11 +10,6 @@ nu() {
     npm un $@
 }
 
-nr() {
-    nu $1
-    ni $1
-}
-
 ns() {
     npm start
 }
