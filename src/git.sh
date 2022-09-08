@@ -3,7 +3,12 @@ gr() {
 }
 
 grm() {
-    gr master
+    if git show-ref --quiet refs/heads/master; then
+        gr master
+    fi
+    if git show-ref --quiet refs/heads/main; then
+        gr main
+    fi
 }
 
 gpt() {
