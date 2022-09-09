@@ -3,3 +3,4 @@ source $path/src/git.sh
 source $path/src/npm.sh
 source $path/src/apt.sh
 source $path/src/update.sh
+source $path/src/django.sh
