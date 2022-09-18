@@ -40,7 +40,17 @@ gc() {
 }
 
 gca() {
-    gc --amend
+    gc --amend $@
+}
+
+gcan() {
+    gca --no-edit
+}
+
+gaacanp() {
+    gaa
+    gcan
+    gpf
 }
 
 gcapf() {
