@@ -45,3 +45,27 @@ nr() {
 nrd() {
     nr dev
 }
+
+np() {
+    npm pack
+}
+
+nilp() {
+    LIB=$(realpath $1)
+    DIR="$(pwd)"
+    cd $LIB
+    nr lib
+    np
+    pName=$(cut -d "=" -f 2 <<< $(npm run env | grep "npm_package_name"))
+    name=$(echo $pName | tr / - | tr -d @)
+    version=$(cut -d "=" -f 2 <<< $(npm run env | grep "npm_package_version"))
+    packName="$name-$version.tgz"
+    cd $DIR
+    rm -r node_modules/.cache/default-development
+    ni -f "$LIB/$packName"
+}
+
+nilps() {
+    nilp $1
+    ns
+}
