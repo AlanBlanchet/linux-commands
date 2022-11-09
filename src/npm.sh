@@ -14,9 +14,24 @@ ns() {
     npm start
 }
 
-nrd() {
+nrid() {
     nu $@
     nid $@
+}
+
+nrids() {
+    nrid $@
+    ns
+}
+
+nri() {
+    nu $@
+    ni $@
+}
+
+nris() {
+    nri $@
+    ns
 }
 
 nis() {
