@@ -1,0 +1,8 @@
+cpt         [cp tar]
+                cpt directory_to_copy/ destination/name.tar
+cput        [cp untar]
+                cput source/name.tar directory_where_to_untar
+cpz         [cp zip]
+                cpz directory_to_copy/ destination/name.zip
+cpuz        [cp unzip]
+                cpuz cp_unzip source/name.zip directory_where_to_unzip
