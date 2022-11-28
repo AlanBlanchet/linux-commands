@@ -1,0 +1,6 @@
+pm          [python manage]
+                python manage.py $@
+pmr         [python manage runserver]
+                pm runserver
+pmm         [python manage migrate]
+                pm migrate

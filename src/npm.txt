@@ -1,0 +1,32 @@
+ni          [npm install]
+                npm i $@
+nid         [npm install dev]
+                npm i -D $@
+nu          [npm uninstall]
+                npm un $@
+ns          [npm start]
+nri         [npm reinstall]
+                nu $@ & ni $@
+nrid        [npm reinstall dev]
+                nu $@ & nid $@
+nris        [npm reinstall & start]
+                nri $@ & ns
+nrids       [npm reinstall dev & start]
+                nrid $@ & ns
+nis         [npm install & start]
+                ni $@ & ns
+nids        [npm install dev & start]
+                nid $@ & ns
+nrfi        [npm reinstall force]
+                rm -rf ./node_modules & ni
+naf         [npm audit fix]
+                npm audit fix $@
+nr          [npm run]
+                npm run $@
+nrd         [npm run dev]
+                nr dev
+np          [npm pack]
+nilp        [npm install lib package]
+                Takes the path of the package to install. Will build the package with `nr lib`, pack it and install it inside the current folder
+nilps       [npm install lib package & start]
+                nilp $1 & ns

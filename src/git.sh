@@ -5,8 +5,7 @@ gr() {
 grm() {
     if git show-ref --quiet refs/heads/master; then
         gr master
-    fi
-    if git show-ref --quiet refs/heads/main; then
+    elif git show-ref --quiet refs/heads/main; then
         gr main
     fi
 }
@@ -17,14 +16,6 @@ gpt() {
 
 gpr() {
     git pull --rebase
-}
-
-gf() {
-    git fetch $@
-}
-
-gfp() {
-    gf --prune
 }
 
 gp() {
@@ -77,10 +68,6 @@ gaac() {
 
 gaacp() {
     gaac && gp
-}
-
-gr() {
-    git rebase $@
 }
 
 grc() {

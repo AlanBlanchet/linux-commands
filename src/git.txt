@@ -1,0 +1,44 @@
+Use with caution !
+
+grm         [git rebase master/main]
+                Will `gr` on the master branch or the main branch if it exists
+gpt         [git pull tags]
+                git pull --tags
+gpr         [git pull rebase]
+                git pull --rebase
+gf          [git fetch]
+                git fetch $@
+gfp         [git fetch prune]
+                gf --prune
+gp          [git push]
+                git push $@
+gpf         [git push force]
+                gp -f
+gc          [git commit]
+                git commit $@
+gca         [git commit amend]
+                gc --amend $@
+gcan        [git commit amend no-edit]
+                gca --no-edit
+ga          [git add]
+                git add $@
+gaa         [git add all]
+                ga .
+gaac        [git add all & commit]
+                gaa && gc
+gaacp       [git add all & commit & push]
+                gaac & gp
+gcp         [git commit & push]
+                gc & gp
+gcapf       [git commit amend & push force]
+                gca & gpf
+gaacanp     [git add all & commit amend no-edit & push force]
+                gaa & gcan & gpf
+gr          [git rebase]
+                git rebase $@
+grc         [git rebase continue]
+                gr --continue
+grs         [git rebase skip]
+                gr --skip
+grmp        [git rebase master/main & push force]
+                grm & gpf

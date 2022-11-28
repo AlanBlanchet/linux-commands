@@ -1,0 +1,11 @@
+sai         [sudo apt install]
+                sudo apt install $@
+sarm        [sudo apt remove]
+                sudo apt remove $@
+sar         [sudo apt reinstall]
+                sarm $@ && sai $@
+saud        [sudo apt update]
+saug        [sudo apt upgrade]
+sac         [sudo apt clean]
+sav         [sudo apt update & upgrade & clean]
+                saud && saug && sac

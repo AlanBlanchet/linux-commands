@@ -1,0 +1,7 @@
+Aliases help page
+
+Options:
+    -h --help       Print aliases help
+    -v --version       /
+    -l --list       List all alias commands
+    -u --update     Update the package
