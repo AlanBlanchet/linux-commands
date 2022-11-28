@@ -2,3 +2,5 @@ apt
 git
 npm
 django
+cp
+zip

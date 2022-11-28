@@ -1,0 +1,5 @@
+z          [zip]
+                z directory_to_copy/ destination/name.zip
+
+uz          [unzip]
+                uz source/name.zip directory_where_to_unzip
