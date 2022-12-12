@@ -4,3 +4,4 @@ npm
 django
 cp
 zip
+mkdir

@@ -1,0 +1,4 @@
+Allow the create a directory and move into it.
+
+mcd         [mkdir && cd]
+                mkdir -p $@ & cd $@

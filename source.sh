@@ -6,3 +6,4 @@ source $path/src/django.sh
 source $path/src/aliases.sh
 source $path/src/cp.sh
 source $path/src/zip.sh
+source $path/src/mkdir.sh
