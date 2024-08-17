@@ -44,3 +44,10 @@ grmp        [git rebase master/main & push force]
                 grm & gpf
 grft        [git rebase branches A,B,C on X]
                 for Y in branches : gr X Y
+
+Github
+
+ghf         [github repo fork]
+                gh repo fork
+ghaacp      [github repo fork & add & commit & push]
+                ghf && gaacp

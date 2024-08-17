@@ -39,6 +39,7 @@ Here is a list of the currently supported commands :
 - [npm](https://github.com/AlanBlanchet/linux-commands/blob/master/src/npm.txt)
 - [cp](https://github.com/AlanBlanchet/linux-commands/blob/master/src/cp.txt)
 - [zip](https://github.com/AlanBlanchet/linux-commands/blob/master/src/zip.txt)
+- [tensorboard](https://github.com/AlanBlanchet/linux-commands/blob/master/src/tensorboard.txt)
 
 ## Examples
 
