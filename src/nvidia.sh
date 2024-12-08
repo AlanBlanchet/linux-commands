@@ -1,0 +1,3 @@
+nvr() {
+    sudo rmmod nvidia
+}

@@ -12,3 +12,4 @@ source $path/src/zip.sh
 source $path/src/mkdir.sh
 source $path/src/custom.sh
 source $path/src/tensorboard.sh
+source $path/src/nvidia.sh
