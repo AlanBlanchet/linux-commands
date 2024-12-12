@@ -1,0 +1,4 @@
+spd         [space current dir]
+                du dir
+spm         [memory]
+                free -h

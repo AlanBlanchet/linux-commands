@@ -6,3 +6,4 @@ cp
 zip
 mkdir
 nvidia
+space
