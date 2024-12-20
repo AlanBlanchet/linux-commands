@@ -14,3 +14,4 @@ source $path/src/custom.sh
 source $path/src/tensorboard.sh
 source $path/src/nvidia.sh
 source $path/src/space.sh
+source $path/src/stats.sh
