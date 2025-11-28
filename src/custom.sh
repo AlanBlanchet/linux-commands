@@ -1,15 +1,16 @@
-#
-# This file contains custom shell aliases and functions for personal use.
-# Add your frequently used commands, shortcuts, and utility functions here.
-#
-# This file is sourced from the main aliases configuration and
-# should be used for user-specific customizations that don't fit into other
-# categorized alias files.
-#
-# Usage:
-#   Add custom aliases like: alias mycommand='actual command'
-#   Add custom functions with:
-#   function myfunction() {
-#     # function code
-#   }
-#
+cdapv() {
+    cd ~/dev/apv11
+    docker-compose -f docker-compose.local.yml --env-file .env.local up
+    #conda activate apv11
+    #python manage.py runserver
+}
+
+cdemb() {
+    cd ~/dev/emb06_django
+    conda activate emb06_django
+    python manage.py runserver
+}
+
+vpn() {
+    sudo tailscale up --accept-routes
+}
